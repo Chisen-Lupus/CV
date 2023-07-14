@@ -2,17 +2,17 @@
 \usepackage[slantfont, boldfont]{xeCJK}
 \usepackage{amsmath}
 \usepackage{enumitem}
-\usepackage[left=0.4in,top=0.8in,right=0.4in,bottom=0.8in, letterpaper]{geometry}
+\usepackage[left=0.4in,top=1in,right=0.4in,bottom=1in, letterpaper]{geometry}
 \usepackage{hyperref}
 \usepackage[x11names]{xcolor}
 \hypersetup{
     colorlinks=true,
     linkcolor=blue,
     filecolor=blue,
-    citecolor = black,      
-    urlcolor=Blue2,
+    citecolor=black,      
+    urlcolor=Blue3, % url color
     }
-\linespread{1 }%行距 1
+\linespread{1.03}%行距 1
 % \setlength{\parskip}{-1.5ex}%段距 1.5ex
 \setlength{\parindent}{0em}%缩进 0em
 \usepackage{fancyhdr}
@@ -59,14 +59,14 @@
 
 \textbf{University of Illinois at Urbana-Champaign} (Illinois, U.S.) | College of Liberal Arts \& Sciences \hfill \textbf{Aug 2022 - Present}
 \begin{itemize}[leftmargin=1.5em]
-    \item Bachelor of Science - \textbf{Astrophysics} and \textbf{Mathematics}\hfill \textbf{4.00/4.00} 
+    \item Major in \textbf{Astrophysics} and \textbf{Mathematics}\hfill \textbf{4.00/4.00} 
     \item Minor in \textbf{Physics}, \textbf{Computer Science}, and \textbf{Chemistry}
     \item Enrolled in the \textbf{LAS Honors program} 
 \end{itemize}
 
 \textbf{University of Macau} (Macau SAR, China) | Faculty of Science and Technology \hfill \textbf{Aug 2019 - May 2022}
 \begin{itemize}[leftmargin=1.5em]
-    \item Major in \textbf{Applied Physics and Chemistry} \hfill \textbf{3.40/4.00} (3.81 in the third year)
+    \item Major in \textbf{Applied Physics and Chemistry} \hfill \textbf{3.40/4.00} (last year: 3.81)
     \item Enrolled in the \textbf{Honours College}
     % \item Director of \textbf{University of Macau Physics Society} \hfill Aug 2020 - Feb 2021
 \end{itemize}
@@ -79,27 +79,40 @@
     
 \end{section}
 
+\begin{section}{PUBLICATIONS}
+    
+\begin{enumerate}[leftmargin=1.5em]
+    \item Grant Merz, \textbf{Yichen Liu}, Colin J. Burke, Patrick D. Aleo, Xin Liu, Matias Carrasco Kind, Volodymyr Kindratenko, Yufeng Liu, \href{https://arxiv.org/abs/2307.05826}{``Detection, Instance Segmentation, and Classification for Astronomical Surveys with Deep Learning (DeepDISC): Detectron2 Implementation and Demonstration with Hyper Suprime-Cam Data,"}, in ArXiv (2023)
+    \item \textbf{Yichen Liu}, Peixia Zheng, and Hong-Chao Liu, \href{https://opg.optica.org/oe/fulltext.cfm?uri=oe-30-9-14073&id=471300}{``Anti-loss-compression image encryption based on computational ghost imaging using discrete cosine transform and orthogonal patterns,"} Opt. Express 30, 14073-14087 (2022)
+    \item Peixia Zheng, \textbf{Yichen Liu}, and Hong-Chao Liu, \href{http://www.irla.cn/cn/article/doi/10.3788/IRLA20211058}{``Single-pixel imaging and metasurface imaging,"} Infrared and Laser Engineering (红外与激光工程) 50.12, 20211058-1 (2022)
+\end{enumerate}
+
+\end{section}
+
 \begin{section}{RSEARCH EXPERIENCES}
 
 \textbf{Department of Astronomy} (Illinois, U.S.) - \textit{research assistant} \hfill \textbf{Sep 2022 - Present}
 \begin{itemize}[leftmargin=1.5em]
     \item Supervisor - \href{mailto:xinliuxl@illinois.edu}{Professor Xin Liu}
-    \item Topic 1 - galaxy deblending using machine learning \hfill \textbf{Sep 2022 - Present}
+    \item Topic 1 - deblending in astronomical surveys using machine learning \hfill Sep 2022 - Present
     \begin{itemize}[leftmargin=1.5em]
-        \item Examined the source extraction pipelines of \href{https://github.com/burke86/astrodet}{\texttt{Astrodet}} and \href{https://github.com/burke86/astro_rcnn}{\texttt{Astro R-CNN}} using \href{https://github.com/kbarbary/sep/tree/v1.1.x}{\texttt{Sep}} and \href{https://github.com/pmelchior/scarlet}{\texttt{Scarlet}}
-        \item Arranged test runs of different models and configurations based on PhoSim data on Hardware - Accelerated Learning (HAL) cluster using \href{https://github.com/facebookresearch/detectron2}{\texttt{Detectron2}}
-        \item Wrote code to introduce Transformer models such as MViT and VitDet into the pipeline
-        \item Enrolled in the NCSA SPIN internship in Summer 2023
+        \item Enrolled in Summer 2023 NCSA SPIN internship
+        \item Examined the source extraction pipelines of \href{https://github.com/burke86/deepdisc}{\texttt{DeepDISC}} and \href{https://github.com/burke86/astro_rcnn}{\texttt{Astro R-CNN}} using \href{https://github.com/kbarbary/sep/tree/v1.1.x}{\texttt{Sep}} and \href{https://github.com/pmelchior/scarlet}{\texttt{Scarlet}}
+        \item Conducted simulation runs of different models and configurations based on PhoSim data on Hardware - Accelerated Learning (HAL) cluster using \href{https://github.com/facebookresearch/detectron2}{\texttt{Detectron2}}
+        \item Modified code and applied Transformer models, MViT and VitDet, into the pipeline
+        \item Recent work includes building neural networks for photometric redshift estimation 
     \end{itemize}
-    \item Topic 2 - DES SED fitting \hfill Feb 2023 - Present
+    \item Topic 2 - DES SED fitting \hfill Feb 2023 - May 2023
     \begin{itemize}[leftmargin=1.5em]
-        \item Generated SED spectra of the sources in the DES and WISE catalogs using \href{https://cigale.lam.fr/}{\texttt{CIGALE}} 
-        \item Compared and labelled potential AGNs in the catalog
+        \item Performed SED fitting of the sources in the DES and WISE catalogs using \href{https://cigale.lam.fr/}{\texttt{CIGALE}} 
+        \item Generated criteria and selected AGN candidates in the source catalogs
     \end{itemize}
-    % \item Topic 3 - \color{red}{[SPIN intern]} \hfill {\color{red}[\textbf{Jun 2023 - Aug 2023}]}
-    % \begin{itemize}[leftmargin=1.5em]
-    %     \item {\color{red}[details]}
-    % \end{itemize}
+    \item Topic 3 - host galaxy properties of variable AGNs \hfill Jun 2023 - Present
+    \begin{itemize}[leftmargin=1.5em]
+        \item Matched the dwarf AGN candidates in HSC SSP catalog to the SIMBAD database 
+        \item Prepared batch-download code of optical spectra for SDSS, zCOSMOS, Magellan, DEIMOS, etc. 
+        \item Compared and resolved the inconsistensies of redshifts between HSC and other databases
+    \end{itemize}
 \end{itemize}
 
 \textbf{National Observatory of China} (Beijing, China) - \textit{summer research internship} \hfill \textbf{Jun 2022 - Aug 2022}
@@ -107,46 +120,37 @@
     \item Supervisor - \href{mailto:chjwu@bao.ac.cn}{Professor Chaojian Wu}
     \item Topic - meteor slitless spectrum
     \begin{itemize}[leftmargin=1.5em]
-        \item Computed the spectrum of Gemini meteors captured by DSLR
-        \item Analyzed the intensitities of Sodium and Magnesium using Python
-        \item Wrote code to use machine learning to identify meteors from the meteors and do photometry automatically
+        \item Generated the spectrum of 2021 Gemini meteors captured by DSLR
+        \item Analyzed the intensitities of Sodium and Magnesium lines using Python
+        \item Wrote machine learning code to filter and locate meteors from mass recording and perform photometry automatically
     \end{itemize}
 \end{itemize}
+
+\newpage
 
 \textbf{Institute of Applied Physics \& Materials Engineering} (Macau SAR, China) - \textit{research assistant} \hfill \textbf{Aug 2019 - May 2022}
 \begin{itemize}[leftmargin=1.5em]
     \item Supervisor - \href{mailto:hcliu@um.edu.mo}{Professor Hongchao Liu}
-    \item Topic 1 - ghost imaging under complex environment  \hfill Aug 2019 - Aug 2021
+    \item Topic 1 - ghost imaging in complex environment  \hfill Aug 2019 - Aug 2021
     \begin{itemize}[leftmargin=1.5em]
-        \item Studied the concepts of single-pixel imaging \& ghost imaging
-        \item Managed ghost imaging experiments in MATLAB (measure image quality based on different equipment and algorithms), analyze the data, and author reports for project supervisors
-        \item Reviewed latest studies on ghost imaging and presented research summaries at staff meetings
+        \item Reviewed latest studies on ghost imaging \& single-pixel imaging and presented research summaries at staff meetings
+        \item Measure ghost imaging quality based on different equipment and reconstruction algorithms in MATLAB, analyzed the data, and authored reports for project supervisors
+        \item Investigate light patterns reflected by distorting mirrors and compare the patterns to reflections from regular mirrors
     \end{itemize}
     \item Topic 2 - anti-loss image encryption based on ghost imaging \hfill Sep 2021 - Feb 2022
     \begin{itemize}[leftmargin=1.5em]
-        \item Conducted experiments on ghost imaging using the optimized patterns 
-        \item Designed Python algorithms based on the concept of compressive sensing 
-        \item Conducted the computational simulations of ghost imaging and integrated the results
-        \item Authored research paper, becoming \href{https://www.tdm.com.mo/en/news-detail/683438?isvideo=false&lang=en&category=all}{the first undergraduate student in the department publishing research paper} 
+        \item Conducted experiments on ghost imaging, metamaterials and metasurfaces, and topological materials
+        \item Designed Python algorithms based on compressive sensing and gradient descent
+        \item Managed computational imaging simulations using \href{https://pytorch.org/}{\texttt{PyTorch}} using high-performance graphic card
+        \item Published a high-impact journal article as the first author \href{https://www.tdm.com.mo/en/news-detail/683438?isvideo=false&lang=en&category=all}{as the first undergraduate student in the department} 
     \end{itemize}
     \item Topic 3 - ghost imaging using recurrent neural network  \hfill Mar 2022 - May 2022
     \begin{itemize}[leftmargin=1.5em]
-        \item Operated lasers and other equipments in collaboration with postgraduate students
-        \item Summarized and verified the existing ghost imaging methods using nerural networks
-        \item Designed Python algorithms based on recurrent and convolutional neural network for ghost imaging 
+        \item Operated laser devices in collaboration with postgraduate students
+        \item Summarized and verified existing ghost imaging methods that involve nerural networks
+        \item Designed Python pipelines based on recurrent and convolutional neural network for ghost imaging 
     \end{itemize}
 \end{itemize}
-
-\end{section}
-
-\newpage
-
-\begin{section}{PUBLICATIONS}
-    
-\begin{enumerate}[leftmargin=1.5em]
-    \item  \textbf{Yichen Liu}, Peixia Zheng, and Hong-Chao Liu, \href{https://opg.optica.org/oe/fulltext.cfm?uri=oe-30-9-14073&id=471300}{``Anti-loss-compression image encryption based on computational ghost imaging using discrete cosine transform and orthogonal patterns,"} Opt. Express 30, 14073-14087 (2022)
-    \item Peixia Zheng, \textbf{Yichen Liu}, and Hong-Chao Liu, \href{http://www.irla.cn/cn/article/doi/10.3788/IRLA20211058}{``Single-pixel imaging and metasurface imaging (Invited),"} Infrared and Laser Engineering (红外与激光工程) 50.12, 20211058-1 (2022)
-\end{enumerate}
 
 \end{section}
 
@@ -163,9 +167,9 @@
 \begin{section}{AWARDS}
 
     \begin{itemize}[leftmargin=1.5em]
-        \item University of Illinois Dean's Honour List \hfill Jan 2023
+        \item University of Illinois Dean's Honor List (2022-2023) \hfill Jul 2023
         \item Smart Star Sponsorship for studies at University of California, Berkeley \hfill Jun 2022
-        \item University of Macau Dean's Honour List (2020 first semester and 2022) \hfill Aug 2022
+        \item University of Macau Dean's Honour List (2020 and 2022) \hfill Aug 2022
         \item Residential College Summer Programme Sponsorship for studies at Shanghai Jiao Tong university \hfill May 2021
         \item Third Prize, China Undergraduate Physics Tournament \hfill Oct 2020
         \item National Team Leader at the 2019 European Union Contest for Young Scientists \hfill Sep 2019
@@ -182,48 +186,50 @@
 
 \textbf{Youtuber in physics and mathematics} (Online) \hfill {Sep 2021 - Present}
 \begin{itemize}[leftmargin=1.5em]
-    \item Occasionally live stream or publish videos in Bilibili platform, offering public education resources in Chinese
-    \item Topics include mathematics and physics that I self-learned
+    \item Occasionally live stream or publish videos in ``Bilibili'' platform, offering public education resources in Chinese
+    \item Topics include self-learned or taught undergraduate-level mathematics and physics
     \item \href{https://www.bilibili.com/video/BV1th411W7xu/}{The most popular video} obtained more than 160,000 watchings
 \end{itemize}
 
 \textbf{Seminar of Physics at the University of Macau} (Macau SAR, China) \hfill {Feb 2022 - May 2022}
 \begin{itemize}[leftmargin=1.5em]
-    \item This is a series of unofficial lectures organized by me and my classmate, \href{http://runawayfancy.me/}{Jiheng Duan}, willing to offer the contents that the University of Macau's curriculum does not provide, such as classical mechanics, supplementing the theoretical basis of  the future research and studies in physics for the DPC students
-    \item Conducted and arranged the class meetings twice a week
+    \item This was a series of unofficial lectures organized by me and my classmate, \href{http://runawayfancy.me/}{Jiheng Duan}, offering math and physics contents that the University of Macau's curriculum did not provide, such as classical mechanics and partial differential equations, supplementing the theoretical basis of future research and studies in physics for DPC students 
+    \item Conducted the class meetings twice a week over the semester
     \item Prepared and taught the lecture \textit{SPUM 102 The tools of physical tools}, including complex variables, $\Gamma$ functions, integral transforms, $\delta$ functions, and Green functions \hfill {\footnotesize \href{https://github.com/Chisen-Lupus/Seminar-of-Physics-UM/blob/main/SPUM%20102%20The%20tools%20of%20physical%20tool.pdf}{|Syllabus}}
-    \item The recordings of the lectures are available on \href{https://www.youtube.com/watch?v=nQkv03r-XeQ&list=PLV9fHDZW7hHWQ9rrAk7c9kdeV-Lqyt7pV&index=10}{Youtube}
+    \item The recordings of the lectures are publically available on \href{https://www.youtube.com/watch?v=nQkv03r-XeQ&list=PLV9fHDZW7hHWQ9rrAk7c9kdeV-Lqyt7pV&index=10}{Youtube}
     % \item Wrote the academic guideline for the freshmans 
 \end{itemize}
 
 \end{section}
+
+\newpage
     
 \begin{section}{ACTIVITIES}
 
 \textbf{Department of Astronomy} (Illinois, U.S.) - \textit{undergraduate tutor} \hfill \textbf{Jan 2023 - Present}
 \begin{itemize}[leftmargin=1.5em]
-    \item Planned and facilitated collaborative tutoring sessions for Astronomy-program major students enrolled in targeted core major courses
+    \item Planned and facilitated collaborative tutoring sessions for Astronomy-program major students enrolled in targeted core major courses 
 \end{itemize}
 
 \textbf{Personal 25-centimeter Remote Observatory} (Hebei, China) - \textit{astrophotographer} \hfill \textbf{Jan 2018 - Jul 2022}
 \begin{itemize}[leftmargin=1.5em]
     \item Identified a suitable site in China and built a 2$\times$2-meter storage facility with internet access and a retractable roof
-    \item Selected, assembled, and tested the equipment; successfully developed a remotely-operated facility
-    \item \href{https://cheysen.fit/astrophotography/}{Regularly captured emission nebulae}
+    \item Selected, assembled, and tested the equipment, and successfully developed a remotely-operated facility
+    \item Regularly captured emission nebulae and selected photos are listed in \href{https://cheysen.fit/astrophotography/}{my website}
 \end{itemize}
 
 \textbf{University of Macau Physics Society} (Macau SAR, China) - \textit{director} \hfill \textbf{Aug 2020 - Feb 2021}
 \begin{itemize}[leftmargin=1.5em]
     \item Founded the University's physics society and promoted its activities on social media platforms
     \item Significantly expanded the Society's membership through effective outreach activities and university club fairs
-    \item Organized and led a team of undergraduate students at the 2020 China Undergraduate Physics Tournament% and won Third Prize
+    \item Organized and led a team of undergraduate students at the 2020 China Undergraduate Physics Tournament
 \end{itemize}
 
-\newpage
+% \newpage
 
 \textbf{Department of Physics and Chemistry} (Macau SAR, China) - \textit{student helper} \hfill \textbf{Jul 2020 - Oct 2020}
 \begin{itemize}[leftmargin=1.5em]
-    \item Procured equipment for physics-related research (requested product quotes and negotiated contracts with suppliers) 
+    \item Requested equipmrnt quotes and negotiated contracts with suppliers for physics-related research 
     \item Tracked the department's procurement budget and developed budgeting recommendations
     \item Purchased supplies for the 2020 China Undergraduate Physics Tournament
 \end{itemize}
@@ -234,13 +240,14 @@
 
 \begin{tabular}{rl}
     Skilled in: & Python, \LaTeX, MATLAB, Git, and Shell Bash/Zsh \\
-    Basic Knowledge: & C/C++, Mathematica, Julia, docker, and Java \\
+    Basic Knowledge: & C/C++, Mathematica, Julia, docker, SQL, and Java \\
     Softwares: & MaxIm DL, COMSOL, Altium Designer, KiCAD, Solidworks, Cinema 4D, and SPSS \\
     Often-used Packages: & \href{https://www.astropy.org/}{\texttt{AstroPy}}, \href{https://github.com/pmelchior/scarlet}{\texttt{Scarlet}}, \href{https://pytorch.org/}{\texttt{PyTorch}}, \href{https://github.com/facebookresearch/detectron2}{\texttt{Detectron2}}, and \href{https://cigale.lam.fr/}{\texttt{CIGALE}} \\
-    Contributions: & \href{https://github.com/burke86/astrodet}{\texttt{Astrodet}}: instance segmentation of galaxies and stars \\
+    Contributions: & \href{https://github.com/burke86/deepdisc}{\texttt{DeepDISC}}: Using deep learning for classification on astornomical survey images \\
     & \href{https://github.com/Chisen-Lupus/metspec}{\texttt{Metspec}}: Auto-detection and photometry of meteor slitless spectrum \\
-    & \href{https://github.com/Chisen-Lupus/DES-SED-fitting}{\texttt{DES-SED-Fitting}}: SED fitting and classification of DES sources\\
-    & \href{https://github.com/gnarayan/decat_pointings}{\texttt{DECat-pointings}}: working repository of DECam
+    & \href{https://github.com/Chisen-Lupus/DES-SED-fitting}{\texttt{DES-SED-Fitting}}: SED fitting and classification of DES sources \\
+    & \href{https://github.com/gnarayan/decat_pointings}{\texttt{DECat-pointings}}: working repository of DECam \\
+    & \href{https://github.com/burke86/dwarf_agn_cosmos}{\texttt{Dwarf-AGN-COSMOS}}: Spectral analysis for dwarf AGN candidates in COSMOS field
 \end{tabular}
 
 \end{section} 
