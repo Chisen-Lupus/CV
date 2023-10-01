@@ -1,8 +1,8 @@
-\documentclass[11pt]{article}
+\documentclass[10pt]{article}
 \usepackage[slantfont, boldfont]{xeCJK}
 \usepackage{amsmath}
 \usepackage{enumitem}
-\usepackage[left=0.5in,top=0.8in,right=0.5in,bottom=0.8in, letterpaper]{geometry}
+\usepackage[left=0.4in,top=0.4in,right=0.4in,bottom=0.8in, letterpaper]{geometry}
 \usepackage{hyperref}
 \usepackage[x11names]{xcolor}
 \hypersetup{
@@ -12,19 +12,22 @@
     citecolor=black,      
     urlcolor=Blue3, % url color
     }
-\linespread{1}%行距 1
-% \setlength{\parskip}{-1.5ex}%段距 1.5ex
+\linespread{1.1}%行距 1
+% \setlength{\parskip}{1.5ex}%段距 1.5ex
 \setlength{\parindent}{0em}%缩进 0em
 \usepackage{fancyhdr}
 \pagestyle{fancy}
 \fancyhf{}
-\cfoot{\thepage\hspace{1pt} OF \pageref*{LastPage}}
+\renewcommand{\footrulewidth}{0.4pt}
+\lfoot{Yichen Liu}
+\cfoot{\today}
+\rfoot{\thepage\hspace{1pt} OF \pageref*{LastPage}}
 \renewcommand\headrulewidth{0pt}
-\setlength{\headheight}{0.6in}%加上之后其余页就同步了
-\setlength{\footskip}{5ex}%加上之后其余页就同步了
-\setlength{\headsep}{2ex}
+% \setlength{\headheight}{0in}%固定页眉位置 页眉与正文baseline的高度差 加上之后其余页就同步了
+% \setlength{\footskip}{0in}%固定正文结尾 结尾下限和页脚下限的高度差 加上之后其余页就同步了
+% \setlength{\headsep}{0in}
 \usepackage{titlesec}
-\titleformat{\section}{\vspace{-1.5ex}\bf}{}{0em}{}[\hrule\vspace{-1.5ex}]
+\titleformat{\section}{\vspace{-1.5ex}\bf}{}{0em}{}[\hrule height 0.8pt\vspace{-1.5ex}]
 \usepackage{lastpage}
 \usepackage{fontspec}
 % \setmainfont{Garamond}
@@ -43,30 +46,46 @@
 \newcommand{\github}[1]{\href{https://github.com/#1}{\textcolor[HTML]{000000}{\faGithub}}}
 \usepackage{booktabs}% http://ctan.org/pkg/booktabs
 \newcommand{\tabitem}{~~\llap{\textbullet}~~}
+\usepackage{multicol}
 
-\chead{
-    {\bf\underline{\large{YICHEN LIU}}}\\
-    \vspace{1ex}
-    tel: +1-(447) 902-2638 | e-mail: \href{mailto:yl127@illinois.edu}{yl127@illinois.edu} | web: \href{https://cheysen.fit}{https:$/\!/$cheysen.fit} | \orcid{0000-0003-4247-0169} \github{Chisen-Lupus} \googlescholar{GRjhRLUAAAAJ}
-}
 
 \begin{document}
 
 %\setlength{\headsep}{0pt}
 
+\begin{center}\bf{\large{YICHEN LIU}}\end{center}
+% \vspace{1ex}
+
+\begin{multicols}{2}
+
+\begin{tabular}{rl}
+    tel & +1-(447) 902-2638 \\
+    e-mail & \href{mailto:yl127@illinois.edu}{yl127@illinois.edu} \\
+    web & \href{https://yliu.fit}{https:/\!/yliu.fit}
+\end{tabular}
+
+\begin{tabular}{rl}
+    \orcid{0000-0003-4247-0169} & \href{https://orcid.org/0000-0003-4247-0169}{0000-0003-4247-0169} \\
+    \github{Chisen-Lupus} & \href{https://github.com/Chisen-Lupus}{Chisen-Lupus} \\
+    \googlescholar{GRjhRLUAAAAJ} & \href{https://scholar.google.com.hk/citations?user=GRjhRLUAAAAJ}{Yichen Liu} \\
+\end{tabular}
+% % tel: +1-(447) 902-2638 | e-mail: \href{mailto:yl127@illinois.edu}{yl127@illinois.edu} | web: \href{https://cheysen.fit}{https:$/\!/$cheysen.fit} | \orcid{0000-0003-4247-0169} \github{Chisen-Lupus} \googlescholar{GRjhRLUAAAAJ}
+
+\end{multicols}
+
 \begin{section}{EDUCATION}
 
 \textbf{University of Illinois at Urbana-Champaign} | College of Liberal Arts \& Sciences \hfill \textbf{Aug 2022 - Present}
 \begin{itemize}[leftmargin=1.5em]
-    \item Bachelor of Science in \textbf{Astrophysics} and \textbf{Mathematics}, expected May 2024 \hfill \textbf{4.00/4.00} 
+    \item Bachelor of Science (\textbf{Honor}) in \textbf{Astrophysics} and \textbf{Mathematics}, expected May 2024 \hfill \textbf{4.00/4.00} 
     \item Minor in \textbf{Physics}, \textbf{Computer Science}, and \textbf{Chemistry}
-    \item Enrolling in the \textbf{LAS Honors program} 
+    % \item Enrolling in the \textbf{LAS Honors program} 
 \end{itemize}
 
 \textbf{University of Macau} | Faculty of Science and Technology \hfill \textbf{Aug 2019 - May 2022}
 \begin{itemize}[leftmargin=1.5em]
-    \item Completed Junior Year of \textbf{Applied Physics and Chemistry} %\hfill \textbf{3.40/4.00} (last year: 3.81)
-    \item Enrolled in the \textbf{Honours College}
+    \item Completed Junior Year of \textbf{Applied Physics and Chemistry (Honour)}  %\hfill \textbf{3.40/4.00} (last year: 3.81)
+    % \item Enrolled in the \textbf{Honours College}
     % \item Director of \textbf{University of Macau Physics Society} \hfill Aug 2020 - Feb 2021
 \end{itemize}
 
@@ -83,9 +102,11 @@ Summer sessions
 \begin{section}{PUBLICATIONS}
     
 \begin{enumerate}[leftmargin=1.5em]
+    \item Liu Y., et al., DES dwarf AGNs, In prep.
+    \item Colin B., et al., Host galaxy properties of variable AGNs in the COSMOS field I. $M_{\rm{BH}}-M_{\ast}$ relation up to $z\sim4$, In prep.
     \item Grant Merz, \textbf{Yichen Liu}, Colin J. Burke, Patrick D. Aleo, Xin Liu, Matias Carrasco Kind, Volodymyr Kindratenko, Yufeng Liu, \href{https://arxiv.org/abs/2307.05826}{``Detection, Instance Segmentation, and Classification for Astronomical Surveys with Deep Learning (DeepDISC): Detectron2 Implementation and Demonstration with Hyper Suprime-Cam Data,"} submitted to MNRAS, available at ArXiv (2023)
     \item \textbf{Yichen Liu}, Peixia Zheng, and Hong-Chao Liu, \href{https://opg.optica.org/oe/fulltext.cfm?uri=oe-30-9-14073&id=471300}{``Anti-loss-compression image encryption based on computational ghost imaging using discrete cosine transform and orthogonal patterns,"} Opt. Express 30, 14073-14087 (2022)
-    \item Peixia Zheng, \textbf{Yichen Liu}, and Hong-Chao Liu, \href{http://www.irla.cn/cn/article/doi/10.3788/IRLA20211058}{``Single-pixel imaging and metasurface imaging,"} Infrared and Laser Engineering (红外与激光工程) 50.12, 20211058-1 (2022)
+    \item Peixia Zheng, \textbf{Yichen Liu}, and Hong-Chao Liu, \href{http://www.irla.cn/cn/article/doi/10.3788/IRLA20211058}{``Single-pixel imaging and metasurface imaging,"} Infrared and Laser Engineering 50.12, 20211058-1 (2022)
 \end{enumerate}
 
 \end{section}
@@ -96,9 +117,9 @@ Summer sessions
 \textit{Department of Astronomy, University of Illinois} 
 \begin{itemize}[leftmargin=1.5em]
     \item Advisor - \href{mailto:xinliuxl@illinois.edu}{Professor Xin Liu}
-    \item Project 1 - deblending in astronomical surveys using machine learning %\hfill Sep 2022 - Present
+    \item Project 1 - deblending in astronomical surveys using machine learning (Summer 2023 \& Academic year 23-24 NCSA SPIN internship) %\hfill Sep 2022 - Present
     \begin{itemize}[leftmargin=1.5em]
-        \item Enrolled in Summer 2023 NCSA SPIN internship
+        % \item Enrolled in Summer 2023 NCSA SPIN internship
         \item Examined the source extraction pipelines of \href{https://github.com/burke86/deepdisc}{\texttt{DeepDISC}} and \href{https://github.com/burke86/astro_rcnn}{\texttt{Astro R-CNN}} using \href{https://github.com/kbarbary/sep/tree/v1.1.x}{\texttt{Sep}} and \href{https://github.com/pmelchior/scarlet}{\texttt{Scarlet}}
         \item Conducted simulation runs of different models and configurations based on PhoSim data on Hardware - Accelerated Learning (HAL) cluster using \href{https://github.com/facebookresearch/detectron2}{\texttt{Detectron2}}
         \item Modified code and applied Transformer models, MViT and VitDet, into the pipeline
@@ -130,7 +151,7 @@ Summer sessions
     \end{itemize}
 \end{itemize}
 
-\newpage
+% \newpage
 
 \textbf{Research Assistant} \hfill \textbf{Aug 2019 - May 2022} \\
 \textit{Institute of Applied Physics \& Materials Engineering, University of Macau}
@@ -207,7 +228,7 @@ Summer sessions
 
 \end{section}
 
-\newpage
+% \newpage
     
 \begin{section}{ACTIVITIES}
 
@@ -262,3 +283,6 @@ Summer sessions
 \end{section} 
 
 \end{document}
+
+
+% 加talk conference
