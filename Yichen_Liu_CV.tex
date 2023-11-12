@@ -1,6 +1,8 @@
 \documentclass[10pt]{article} % minimum 10pt
 \usepackage[slantfont, boldfont]{xeCJK}
 \usepackage{amsmath}
+\usepackage{amssymb}
+\usepackage{textcomp}
 \usepackage{enumitem}
 \usepackage[left=0.4in,top=0.4in,right=0.4in,bottom=0.5in, letterpaper]{geometry}
 \usepackage{hyperref}
@@ -19,9 +21,9 @@
 \pagestyle{fancy}
 \fancyhf{}
 \renewcommand{\footrulewidth}{0.4pt}
-\lfoot{Yichen Liu}
-\cfoot{\today}
-\rfoot{\thepage\hspace{1pt} OF \pageref*{LastPage}}
+\lfoot{\small Yichen Liu}
+\cfoot{\small \today}
+\rfoot{\small \thepage\hspace{1pt} OF \pageref*{LastPage}}
 \renewcommand\headrulewidth{0pt}
 % \setlength{\headheight}{0in}%固定页眉位置 页眉与正文baseline的高度差 加上之后其余页就同步了
 \setlength{\footskip}{4ex}%固定正文结尾 结尾下限和页脚下限的高度差 加上之后其余页就同步了
@@ -48,7 +50,10 @@
 \newcommand{\tabitem}{~~\llap{\textbullet}~~}
 \usepackage{multicol}
 \usepackage{soul}
+
+% for testing purpose
 \DeclareRobustCommand{\yichen}[1]{{\sethlcolor{lime}\hl{(YL:) #1}}}
+% \DeclareRobustCommand{\yichen}[1]{#1}
 
 \begin{document}
 
@@ -74,13 +79,13 @@
 
 \begin{section}{EDUCATION}
 
-\textbf{University of Illinois at Urbana-Champaign} | College of Liberal Arts \& Sciences \hfill \textbf{Aug 2022 - Present}
+\textbf{University of Illinois at Urbana-Champaign} | College of Liberal Arts \& Sciences \hfill \textbf{2022/08 - Present}
 \begin{itemize}[leftmargin=1.5em]
-    \item Bachelor of Science (\textbf{Honor}) in \textbf{Astrophysics} and \textbf{Mathematics}, expected May 2024 \hfill \textbf{4.00/4.00} 
+    \item Bachelor of Science (\textbf{Honor}) in \textbf{Astrophysics} and \textbf{Mathematics}, expected 2024/05 \hfill \textbf{4.00/4.00} 
     \item Minor in \textbf{Physics}, \textbf{Computer Science}, and \textbf{Chemistry}
     % \item Enrolling in the \textbf{LAS Honors program} 
 \end{itemize}
-\textbf{University of Macau} | Faculty of Science and Technology \hfill \textbf{Aug 2019 - May 2022}
+\textbf{University of Macau} | Faculty of Science and Technology \hfill \textbf{2019/08 - 2022/05}
 \begin{itemize}[leftmargin=1.5em]
     \item Completed Junior Year of \textbf{Applied Physics and Chemistry (Honour)}  %\hfill \textbf{3.40/4.00} (last year: 3.81)
     % \item Enrolled in the \textbf{Honours College}
@@ -92,7 +97,7 @@
 \begin{section}{PUBLICATIONS AND ABSTRACTS}
     
 \begin{enumerate}[leftmargin=1.5em]
-    \item \yichen{\textbf{Yichen Liu}, et al., ``Black hole - host galaxy relations of variable AGNs in DES C3, X3, and E2 fields up to $z\sim4$'', In prep.}
+    \item \yichen{\textbf{Yichen Liu}, et al., ``Black hole - host galaxy relations of dwarf AGNs in DES C3, X3, and E2 fields up to $z\sim???$'', In prep. \\ (It might takes 2 lines)}
     \item \textbf{Yichen Liu}, Colin J. Burke, Charlotte A. Ward, Xin Liu, Priya Natarajan, ``Host galaxy properties of HSC-SSP variable AGNs in the COSMOS field and expectations for Rubin Observatory'', American Astronomical Society Meeting \#243, id. 3936
     \item Grant Merz, \textbf{Yichen Liu}, Colin J. Burke, Patrick D. Aleo, Xin Liu, Matias Carrasco Kind, Volodymyr Kindratenko, Yufeng Liu, \href{https://academic.oup.com/mnras/advance-article-abstract/doi/10.1093/mnras/stad2785/7273850?redirectedFrom=fulltext}{``Detection, Instance Segmentation, and Classification for Astronomical Surveys with Deep Learning (DeepDISC): Detectron2 Implementation and Demonstration with Hyper Suprime-Cam Data,"} MNRAS 526, 1122 (2023)
     \item \textbf{Yichen Liu}, Peixia Zheng, and Hong-Chao Liu, \href{https://opg.optica.org/oe/fulltext.cfm?uri=oe-30-9-14073&id=471300}{``Anti-loss-compression image encryption based on computational ghost imaging using discrete cosine transform and orthogonal patterns,"} Optics Express 30, 14073 (2022)
@@ -103,40 +108,40 @@
 
 \begin{section}{RSEARCH EXPERIENCES}
 
-\textbf{Research Assistant} (advisor: \href{mailto:xinliuxl@illinois.edu}{Professor Xin Liu}), \textit{Department of Astronomy} \hfill \textbf{Sep 2022 - Present} 
+\textbf{Research Assistant} (advisor: \href{mailto:xinliuxl@illinois.edu}{Professor Xin Liu}), \textit{Department of Astronomy} \hfill \textbf{2022/09 - Present} 
 \begin{itemize}[leftmargin=1.5em]
-    \item Project 1 - instance segmentation in astronomical surveys using machine learning (NCSA SPIN internship) %\hfill Sep 2022 - Present
+    \item \textbf{Project 1: instance segmentation in astronomical surveys using machine learning} (NCSA SPIN internship) \hfill $\rceil$ %2022/09 - Present 
     \begin{itemize}[leftmargin=1.5em]
         \item Evaluated and optimized source extraction pipelines for \href{https://github.com/burke86/deepdisc}{\texttt{DeepDISC}} and \href{https://github.com/burke86/astro_rcnn}{\texttt{Astro R-CNN}} using \href{https://github.com/kbarbary/sep/tree/v1.1.x}{\texttt{Sep}} and \href{https://github.com/pmelchior/scarlet}{\texttt{Scarlet}} frameworks
         \item Orchestrated simulations employing diverse models and configurations on PhoSim data via \href{https://www.ncsa.illinois.edu/research/project-highlights/hal-cluster/}{HAL cluster} with \href{https://github.com/facebookresearch/detectron2}{\texttt{Detectron2}}
         \item Enhanced the pipeline by incorporating Transformer models, MViT and VitDet, to improve instance segmentation
     \end{itemize}
-    \item Project 2 - DES SED fitting %\hfill Feb 2023 - May 2023
+    \item \textbf{Project 2: DES SED fitting} \hfill $\rceil$ %2023/02 - 2023/05
     \begin{itemize}[leftmargin=1.5em]
         \item Performed SED fitting on sources cataloged in DES and WISE using the \href{https://cigale.lam.fr/}{\texttt{CIGALE}} toolkit
         \item Developed selection criteria and identified AGN candidates from extensive source catalogs
     \end{itemize}
-    \item Project 3 - host galaxy properties of variable AGNs %\hfill Jun 2023 - Present
+    \item \textbf{Project 3: host galaxy properties of variable AGNs in the COSMOS field} \hfill $\rceil$ %2023/06 - Present
     \begin{itemize}[leftmargin=1.5em]
-        \item Cross-referenced dwarf AGN candidates from HSC DR2 to subsequent catalogs such as DR3, SIMBAD, DESI, and COSMOS2020
+        \item Cross-referenced variability-selected AGNs from HSC DR2 to subsequent DR3, SIMBAD, DESI, and COSMOS2020
         \item Created scripts for batch downloading of optical spectra from various sources such as SDSS, zCOSMOS, Magellan, DEIMOS, among others, and econciled discrepancies in spectral data across different databases
         \item Determined black hole mass - host galaxy mass relation through SED fitting
         \item Investigated star formation main sequence using \href{https://github.com/legolason/PyQSOFit}{\texttt{PyQSOFit}} toolkit
     \end{itemize}
-    \item \yichen{Project 3.1 - Add DES, which will be abother paper}
+    \item \yichen{\textbf{Project 3.1: Black hole - host galaxy relations of dwarf AGNs in DES field} \hfill $\rceil$} % 2023/06 - Present
     \begin{itemize}[leftmargin=1.5em]
-        \item \yichen{Add DES, which will be abother paper}
-        \item \yichen{Add DES, which will be abother paper}
+        \item \yichen{Matched dwarf AGN candidates in the DES C3, X3, and E2 fields to ??? catalogs}
+        \item \yichen{Will perform a simple PyQSOFit pipeline on this dataset}
     \end{itemize}
-    \item Project 4 - redshift estimation in astronomical surveys using machine learning (NCSA SPIN internship)
+    \item \yichen{\textbf{Project 4: redshift estimation in astronomical surveys using machine learning} (NCSA SPIN internship) \hfill $\rceil$} %2023/10 - Present
     \begin{itemize}[leftmargin=1.5em]
         \item \yichen{Will resolve issues in DeepDisc in LINCC branch}
     \end{itemize}
 \end{itemize}
 
-\textbf{Summer Research Intern} (advisor: \href{mailto:chjwu@bao.ac.cn}{Professor Chaojian Wu}), \textit{National Astronomical Observatory of China} \hfill \textbf{Jun 2022 - Aug 2022} 
+\textbf{Summer Research Internship} (advisor: \href{mailto:chjwu@bao.ac.cn}{Professor Chaojian Wu}), \textit{National Astronomical Observatory of China} \hfill \textbf{2022/06 - 2022/08} 
 \begin{itemize}[leftmargin=1.5em]
-    \item Project - meteor slitless spectrum
+    \item \textbf{Project: meteor slitless spectrum} \hfill $\rceil$
     \begin{itemize}[leftmargin=1.5em]
         \item Analyzed the spectral data of 2021 Gemini meteors captured with DSLR cameras equipped with diffraction gratings
         \item Employed Python to dissect the intensities of Sodium and Magnesium lines 
@@ -144,22 +149,22 @@
     \end{itemize}
 \end{itemize}
 
-\textbf{Research Assistant} (advisor: \href{mailto:hcliu@um.edu.mo}{Professor Hongchao Liu}), \textit{Institute of Applied Physics \& Materials Engineering}\hfill \textbf{Aug 2019 - May 2022} 
+\textbf{Research Assistant} (advisor: \href{mailto:hcliu@um.edu.mo}{Professor Hongchao Liu}), \textit{Institute of Applied Physics \& Materials Engineering}\hfill \textbf{2019/09 - 2022/05} 
 \begin{itemize}[leftmargin=1.5em]
-    \item Project 1 - ghost imaging in complex environment %\hfill Aug 2019 - Aug 2021
+    \item \textbf{Project 1: ghost imaging in complex environment} \hfill $\rceil$ %Aug 2019 - Aug 2021
     \begin{itemize}[leftmargin=1.5em]
         \item Conducted a comprehensive review of contemporary ghost imaging and single-pixel imaging research
         \item Assessed the quality of ghost imaging across various setups using MATLAB, producing reports and comparative analyses
-        \item Investigated the reflection patterns from distorting mirrors, contrasting them with standard mirror reflections to inform imaging technique improvements
+        \item Compared the reflection patterns between distorting and standard mirrors to inform imaging technique improvements
     \end{itemize}
-    \item Project 2 - anti-loss image encryption based on ghost imaging %\hfill Sep 2021 - Feb 2022
+    \item \textbf{Project 2: anti-loss image encryption based on ghost imaging} \hfill $\rceil$ %Sep 2021 - Feb 2022
     \begin{itemize}[leftmargin=1.5em]
         \item Executed experimental research into ghost imaging, investigating the potential of metamaterials and metasurfaces
         \item Created Python algorithms leveraging compressive sensing and gradient descent methodologies.
         \item Managed and fine-tuned computational imaging simulations on \href{https://pytorch.org/}{\texttt{PyTorch}} with high-performance GPUs
         \item Published a first-authored research paper as the first undergraduate student in the department, and \href{https://www.tdm.com.mo/en/news-detail/683438?isvideo=false&lang=en&category=all}{exposed by local media} 
     \end{itemize}
-    \item Project 3 - ghost imaging using recurrent neural network %\hfill Mar 2022 - May 2022
+    \item \textbf{Project 3: ghost imaging using recurrent neural network} \hfill $\rceil$ %Mar 2022 - May 2022
     \begin{itemize}[leftmargin=1.5em]
         \item Collaborated with a team of postgraduate students in managing laser equipment for experimental setups
         \item Validated existing ghost imaging techniques incorporating neural networks
@@ -169,63 +174,63 @@
 
 \end{section}
 
-\begin{section}{OBSERVATION EXPERIENCES}
-    
-\begin{itemize}[leftmargin=1.5em]
-    \item Cerro Tololo Inter-American Observatory, Blanco 4m / DECam: 3 nights observation \hfill Jan 2023 - Apr 2023
-    \item Personal Remote Observatory, BKP250 / QHY9sm: astrophotography and photometry \hfill Jul 2019 - Aug 2022
-\end{itemize}
-
-\end{section}
-
 \begin{section}{SYNERGISTIC ACTIVITIES}
 
-\begin{tabular}{rl}
-    Presentations: & AAS 243rd Meeting, \textbf{Oral presenter}, Scheduled Jan 2024, LA, US \\
+\begin{tabular}{@{}p{0.15\linewidth}@{}p{0.85\linewidth}@{}}
+    \textbf{Summer schools}: & University of California Berkeley (4.000/4.000), 2022 \hfill $\rceil$\\
+    & Shanghai Jiao Tong University (4.00/4.00), 2021 \\
+    \textbf{Presentations}: & AAS 243rd Meeting, \textbf{Oral presenter}, Scheduled Jan 2024, LA, US \hfill $\rceil$\\
     & STEM Career Exploration and Symposium, \textbf{Poster Presenter}, Jul 2023, IL, US \\
     & NCSA lighning talk, \textbf{Oral presenter}, Jul 2023, IL, US \\
     & EU Contest for Young Scientists, \textbf{Poster Presenter}, Sep 2019, Sofia, Bulgaria \\
-    Summer schools: & University of California Berkeley (4.000/4.000), 2022 \\
-    & Shanghai Jiao Tong University (4.00/4.00), 2021 \\
-    Membership: &LSST Dark Energy Science Collaboration
+    \textbf{Membership}: &LSST Dark Energy Science Collaboration \hfill $\rceil$\\
 \end{tabular}
+
+\end{section}
+
+\begin{section}{OBSERVATION EXPERIENCES}
+    
+\begin{itemize}[leftmargin=1.5em]
+    \item Cerro Tololo Inter-American Observatory, Blanco 4m / DECam: 3 nights observation \hfill 2023/01 - 2023/04
+    \item Personal Remote Observatory, BKP250 / QHY9sm: astrophotography and photometry \hfill 2019/08 - 2022/08
+\end{itemize}
 
 \end{section}
 
 \begin{section}{AWARDS AND GRANTS}
 
     \begin{itemize}[leftmargin=1.5em]
-        \item AAS 243rd Meeting Travel Grants from Department of Astronomy \hfill Oct 2023
-        % \item NCSA SPIN Internship (Summer 2023 \& Academic Year 23-24) \hfill Aug 2023 
-        \item University of Illinois Dean's Honor List (2022-2023) \hfill Jul 2023
-        \item Smart Star Sponsorship for studies at University of California, Berkeley \hfill Jun 2022
-        \item University of Macau Dean's Honour List (2020 and 2022) \hfill Aug 2022
-        \item Residential College Summer Programme Sponsorship for studies at Shanghai Jiao Tong university \hfill May 2021
-        % \item Third Prize, China Undergraduate Physics Tournament \hfill Oct 2020
-        \item National Team Leader at the 2019 European Union Contest for Young Scientists \hfill Sep 2019
-        \item University of Macau Full Scholarship (2019-2021) \hfill Aug 2019
-        \item Bronze Medal, International Olympiad of Astronomy and Astrophysics \hfill Nov 2018
-        % \item First Prize, China Adolescents' Science and Technology Innovation Contest \hfill Aug 2018
-        % \item Second Prize, Deng Feng National Contest on Science and Innovation \hfill Aug 2018
-        % \item Second Prize, China National Astronomy Olympiad \hfill May 2018
+        \item AAS 243rd Meeting Travel Grants from Department of Astronomy \hfill 2023/10
+        % \item NCSA SPIN Internship (Summer 2023 \& Academic Year 23-24) \hfill 2023/08
+        \item University of Illinois Dean's Honor List (2022-2023) \hfill 2023/07
+        \item Smart Star Sponsorship for studies at University of California, Berkeley \hfill 2022/06
+        \item University of Macau Dean's Honour List (2020 and 2022) \hfill 2022/08
+        \item Residential College Summer Programme Sponsorship for studies at Shanghai Jiao Tong university \hfill 2021/05
+        % \item Third Prize, China Undergraduate Physics Tournament \hfill 2020/10
+        \item National Team Leader at the 2019 European Union Contest for Young Scientists \hfill 2019/09
+        \item University of Macau Full Scholarship (2019-2021) \hfill 2019/08
+        \item Bronze Medal, International Olympiad of Astronomy and Astrophysics \hfill 2018/11
+        % \item First Prize, China Adolescents' Science and Technology Innovation Contest \hfill 2018/08
+        % \item Second Prize, Deng Feng National Contest on Science and Innovation \hfill 2018/08
+        % \item Second Prize, China National Astronomy Olympiad \hfill 2018/05
     \end{itemize}
         
 \end{section}
 
 \begin{section}{TEACHING EXPERIENCES}
 
-\textbf{Undergraduate Tutor of Department of Astronomy} \hfill \textbf{Jan 2023 - May 2023}
-\begin{itemize}[leftmargin=1.5em]
-    \item Designed and led interactive tutoring sessions for undergraduates majoring in Astronomy, covering foundational concepts in thermal physics, quantum physics, and astrophysics to supplement their introductory courses
-\end{itemize}
-
-\textbf{Physics and Mathematics Video Creator on Bilibili} \hfill \textbf{Sep 2021 - Present}
+\textbf{Physics and Mathematics Video Creator on Bilibili} \hfill \textbf{2021/09 - Present}
 \begin{itemize}[leftmargin=1.5em]
     \item Produced and broadcasted  educational content on physics and mathematics to a wide audience on the Bilibili platform, with a focus on undergraduate topics and self-study materials, such as the zeta function
     \item Achieved widespread outreach with \href{https://www.bilibili.com/video/BV1th411W7xu/}{the most popular video} surpassing 160,000 views, contributing to the public education
 \end{itemize}
 
-\textbf{Organizer and Lecturer of Seminar of Physics at the University of Macau} \hfill \textbf{Feb 2022 - May 2022}
+\textbf{Undergraduate Tutor of Department of Astronomy} \hfill \textbf{2023/01 - 2023/05}
+\begin{itemize}[leftmargin=1.5em]
+    \item Designed and led interactive tutoring sessions for undergraduates majoring in Astronomy, covering foundational concepts in thermal physics, quantum physics, and astrophysics to supplement their introductory courses
+\end{itemize}
+
+\textbf{Organizer and Lecturer of Seminar of Physics at the University of Macau} \hfill \textbf{2022/02 - 2022/05}
 \begin{itemize}[leftmargin=1.5em]
     \item Founded and co-organized a series of informal but comprehensive lectures with my peer, \href{http://runawayfancy.me/}{Jiheng Duan}, to provide advanced mathematical and physical concepts beyond the University of Macau's curriculum
     \item Addressed gaps in the theoretical understanding necessary for future research in physics, covering topics such as classical mechanics and partial differential equations for Department of Physics and Chemistry students
@@ -239,35 +244,35 @@
 
 \begin{section}{EXTRACURRICULAR EXPERIENCES}
     
-\textbf{Astrophotographer} at \textit{Personal 25‑centimeter Remote Observatory (Hebei, China)} \hfill \textbf{Jan 2018 ‑ Jul 2022}
+\textbf{Astrophotographer}, \textit{Personal 25‑centimeter Remote Observatory (Hebei, China)} \hfill \textbf{2018/01 ‑ 2022/07}
 \begin{itemize}[leftmargin=1.5em]
     \item Sourced and developed a 2×2‑meter remote observatory with full internet connectivity and a retractable roof
     \item Curated and calibrated a suite of astronomical equipment and 3D‑printed accessories, which can be fully controlled remotely
     \item Conducted regular astrophotography sessions, capturing images of emission nebulae, with a selection showcased on \href{https://yliu.fit/astrophotography/}{my webpage}.
 \end{itemize}
 
-\textbf{Director} of \textit{Physics Society, University of Macau (Macau SAR, China)} \hfill \textbf{Aug 2020 - Feb 2021} 
+\textbf{Director}, \textit{Physics Society, University of Macau (Macau SAR, China)} \hfill \textbf{2020/08 - 2021/02} 
 \begin{itemize}[leftmargin=1.5em]
     \item Established and expanded the Physics Society, leading promotional efforts and significantly growing its membership
     \item Guided undergraduates through the China Undergraduate Physics Tournament, enhancing the society's academic community
 \end{itemize}
 
-\textbf{Student Helper} at \textit{Department of Physics and Chemistry, University of Macau (Macau SAR, China)} \hfill \textbf{Jul 2020 - Oct 2020} 
+\textbf{Student Helper}, \textit{Department of Physics and Chemistry, University of Macau (Macau SAR, China)} \hfill \textbf{2020/07 - 2020/10} 
 \begin{itemize}[leftmargin=1.5em]
     \item Handled equipment procurement processes and managed budget recommendations, streamlining the department's operations
 \end{itemize}
 
-\textbf{Organizer} of \textit{Beijing Astronomy and Astrophysics Olympiad (Beijing \& Guangdong, China)} \hfill \textbf{Jan 2018 - Apr 2018} 
-\begin{itemize}[leftmargin=1.5em]
-    \item Orchestrated the logistical planning of the 2018 Olympiad, liaising with high schools nationwide for participation
-    \item Composed the Olympiad's examination materials, orchestrated material procurement, and supported the judging panels
-\end{itemize}
-
-\textbf{President} of \textit{Beijing Youth Astronomy Union (Beijing, China)} \hfill \textbf{Aug 2017 - Aug 2018} 
+\textbf{President}, \textit{Beijing Youth Astronomy Union (Beijing, China)} \hfill \textbf{2017/08 - 2018/08} 
 \begin{itemize}[leftmargin=1.5em]
     \item Conducted educational series on astrophysics, providing Olympiad candidates with additional training resources
     \item Organized public stargazing events adjacent to Beijing’s Olympic Park to foster community engagement in astronomy
     \item Managed the WeChat account ``北京市中学生天文联盟'', achieving widespread readership with posts exceeding 100,000 views
+\end{itemize}
+
+\textbf{Organizer}, \textit{Beijing Astronomy and Astrophysics Olympiad (Beijing \& Guangdong, China)} \hfill \textbf{2018/01 - 2018/04} 
+\begin{itemize}[leftmargin=1.5em]
+    \item Orchestrated the logistical planning of the 2018 Olympiad, liaising with high schools nationwide for participation
+    \item Composed the Olympiad's examination materials, orchestrated material procurement, and supported the judging panels
 \end{itemize}
 
 \end{section}
