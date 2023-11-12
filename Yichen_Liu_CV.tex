@@ -12,7 +12,7 @@
     citecolor=black,      
     urlcolor=Blue3, % url color
     }
-\linespread{1.06}%行距 1
+\linespread{1}%行距 1
 % \setlength{\parskip}{1.5ex}%段距 1.5ex
 \setlength{\parindent}{0em}%缩进 0em
 \usepackage{fancyhdr}
@@ -47,7 +47,8 @@
 \usepackage{booktabs}% http://ctan.org/pkg/booktabs
 \newcommand{\tabitem}{~~\llap{\textbullet}~~}
 \usepackage{multicol}
-
+\usepackage{soul}
+\DeclareRobustCommand{\yichen}[1]{{\sethlcolor{lime}\hl{(YL:) #1}}}
 
 \begin{document}
 
@@ -246,13 +247,13 @@
         
     \end{section}
 
-\begin{section}{PROFESSIONAL EXPERIENCES}
+\begin{section}{EXTRACURRICULAR EXPERIENCES}
 
 \textbf{Astrophotographer} at \textit{Personal 25-centimeter Remote Observatory (Hebei, China)} \hfill \textbf{Jan 2018 - Jul 2022} 
 \begin{itemize}[leftmargin=1.5em]
     \item Sourced and developed a 2$\times$2-meter remote observatory with full internet connectivity and a retractable roof in Hebei, China
     \item Curated and calibrated a suite of astronomical equipment and 3D-printed accessories, achieving the operation of a fully remote-controlled observatory
-    \item Conducted regular astrophotography sessions, capturing images of emission nebulae, with a curated selection showcased on \href{https://cheysen.fit/astrophotography/}{my personal website}. 
+    \item Conducted regular astrophotography sessions, capturing images of emission nebulae, with a curated selection showcased on \href{https://yliu.fit/astrophotography/}{my personal website}. 
 \end{itemize}
 
 \textbf{Director} of \textit{Physics Society, University of Macau (Macau SAR, China)} \hfill \textbf{Aug 2020 - Feb 2021} 
@@ -290,10 +291,9 @@
 \begin{section}{TECHNICAL SKILLS}
 
 \begin{tabular}{rl}
-    Skilled in: & Python, \LaTeX, MATLAB, Git, Arduino, and Shell Bash/Zsh \\
-    Basic Knowledge: & C/C++, Mathematica, Julia, docker, SQL, and Java \\
+    Programming languages: & Python, \LaTeX, MATLAB, Git, Arduino, Shell Bash/Zsh, C/C++, Mathematica, Julia, docker, SQL, and Java \\
     Softwares: & MaxIm DL, COMSOL, Altium Designer, KiCAD, Solidworks, Cinema 4D, and SPSS \\
-    Often-used Packages: & \href{https://www.astropy.org/}{\texttt{AstroPy}}, \href{https://github.com/pmelchior/scarlet}{\texttt{Scarlet}}, \href{https://pytorch.org/}{\texttt{PyTorch}}, \href{https://github.com/facebookresearch/detectron2}{\texttt{Detectron2}}, and \href{https://cigale.lam.fr/}{\texttt{CIGALE}} \\
+    Python Packages: & \href{https://www.astropy.org/}{\texttt{AstroPy}}, \href{https://github.com/pmelchior/scarlet}{\texttt{Scarlet}}, \href{https://pytorch.org/}{\texttt{PyTorch}}, \href{https://github.com/facebookresearch/detectron2}{\texttt{Detectron2}}, and \href{https://cigale.lam.fr/}{\texttt{CIGALE}} \\
     Contributions: & \href{https://github.com/burke86/deepdisc}{\texttt{DeepDISC}}: Using deep learning for classification on astornomical survey images \\
     & \href{https://github.com/Chisen-Lupus/metspec}{\texttt{Metspec}}: Auto-detection and photometry of meteor slitless spectrum \\
     & \href{https://github.com/Chisen-Lupus/DES-SED-fitting}{\texttt{DES-SED-Fitting}}: SED fitting and classification of DES sources \\
