@@ -14,7 +14,7 @@
     citecolor=black,      
     urlcolor=Blue3, % url color
     }
-\linespread{0.98}%行距 1
+\linespread{0.99}%行距 1
 % \setlength{\parskip}{1.5ex}%段距 1.5ex
 \setlength{\parindent}{0em}%缩进 0em
 \usepackage{fancyhdr}
@@ -29,7 +29,7 @@
 \setlength{\footskip}{4ex}%固定正文结尾 结尾下限和页脚下限的高度差 加上之后其余页就同步了
 % \setlength{\headsep}{0in}
 \usepackage{titlesec}
-\titleformat{\section}{\vspace{-2.75ex}\bf}{}{0em}{}[\hrule height 0.8pt\vspace{-1.5ex}]
+\titleformat{\section}{\vspace{-3ex}\bf}{}{0em}{}[\hrule height 0.8pt\vspace{-1.5ex}]
 \usepackage{lastpage}
 \usepackage{fontspec}
 % \setmainfont{Garamond}
@@ -52,8 +52,8 @@
 \usepackage{soul}
 
 % for testing purpose
-% \DeclareRobustCommand{\yichen}[1]{{\sethlcolor{lime}\hl{#1}}}
-\DeclareRobustCommand{\yichen}[1]{#1}
+\DeclareRobustCommand{\yichen}[1]{{\sethlcolor{lime}\hl{#1}}}
+% \DeclareRobustCommand{\yichen}[1]{#1}
 
 \begin{document}
 
@@ -87,23 +87,11 @@
 \end{itemize}
 \textbf{University of Macau} | Faculty of Science and Technology \hfill \textbf{2019/08 - 2022/05}
 \begin{itemize}[leftmargin=1.5em]
-    \item Completed Junior Year of \textbf{Applied Physics and Chemistry (Honour)}  %\hfill \textbf{3.40/4.00} (last year: 3.81)
+    \item Completed Junior Year of \textbf{Applied Physics and Chemistry} (\textbf{Honour})  %\hfill \textbf{3.40/4.00} (last year: 3.81)
     % \item Enrolled in the \textbf{Honours College}
     % \item Director of \textbf{University of Macau Physics Society} \hfill Aug 2020 - Feb 2021
 \end{itemize}
     
-\end{section}
-
-\begin{section}{PUBLICATIONS AND ABSTRACTS}
-    
-\begin{enumerate}[leftmargin=1.5em]
-    \item \yichen{\textbf{Yichen Liu}, et al., ``Black hole - host galaxy relations of dwarf AGNs in DES supernova field up to $z\sim3.4$'', In prep.}
-    \item \textbf{Yichen Liu}, Colin J. Burke, Charlotte A. Ward, Xin Liu, Priya Natarajan, \href{https://submissions.mirasmart.com/AAS243/Itinerary/PresentationDetail.aspx?evdid=500}{``Host galaxy properties of HSC-SSP variable AGNs in the COSMOS field and expectations for Rubin Observatory''}, American Astronomical Society Meeting \#243, id. 3936
-    \item Grant Merz, \textbf{Yichen Liu}, Colin J. Burke, Patrick D. Aleo, Xin Liu, Matias Carrasco Kind, Volodymyr Kindratenko, Yufeng Liu, \href{https://academic.oup.com/mnras/advance-article-abstract/doi/10.1093/mnras/stad2785/7273850?redirectedFrom=fulltext}{``Detection, Instance Segmentation, and Classification for Astronomical Surveys with Deep Learning (DeepDISC): Detectron2 Implementation and Demonstration with Hyper Suprime-Cam Data,"} MNRAS 526, 1122 (2023)
-    \item \textbf{Yichen Liu}, Peixia Zheng, and Hong-Chao Liu, \href{https://opg.optica.org/oe/fulltext.cfm?uri=oe-30-9-14073&id=471300}{``Anti-loss-compression image encryption based on computational ghost imaging using discrete cosine transform and orthogonal patterns,"} Optics Express 30, 14073 (2022)
-    \item Peixia Zheng, \textbf{Yichen Liu}, and Hong-Chao Liu, \href{http://www.irla.cn/cn/article/doi/10.3788/IRLA20211058}{``Single-pixel imaging and metasurface imaging,"} Infrared and Laser Engineering 50, 20211058-1 (2022)
-\end{enumerate}
-
 \end{section}
 
 \begin{section}{RSEARCH EXPERIENCES}
@@ -125,18 +113,18 @@
     \begin{itemize}[leftmargin=1.5em]
         \item Cross-referenced redshifts of variability-selected AGNs from HSC DR2 to subsequent DR3, SIMBAD, DESI, and COSMOS2020
         \item Created scripts for batch downloading of optical spectra from various sources such as SDSS, zCOSMOS, Magellan, DEIMOS, among others, and reconciled discrepancies in spectral data across databases by plotting and analyzing optical spectra
-        \item Investigated star formation main sequence using \href{https://github.com/legolason/PyQSOFit}{\texttt{PyQSOFit}} toolkit, generating a congruent finding as previous studies
+        \item Investigated emission lines and continuum using \href{https://github.com/legolason/PyQSOFit}{\texttt{PyQSOFit}} toolkit, generating a congruent finding as previous studies
         \item Planned photometric studies such as host extraction ahead and present preliminary findings at AAS 243rd meeting 
     \end{itemize}
-    \item \yichen{\textbf{Project 4: black hole - host galaxy relation of AGNs in DES deep fields (leading)} \hfill $\rceil$} % 2023/06 - Present
+    \item \textbf{Project 4: black hole - host galaxy relation of AGNs in DES deep fields (leading)} \hfill $\rceil$ % 2023/06 - Present
     \begin{itemize}[leftmargin=1.5em]
-        \item \yichen{Updated photometric redshifts of dwarf AGN candidates in the DES C3, X3, and E2 fields to spectroscopic redshifts}
-        \item \yichen{Assembled publicly accessible spectra and displayed observations from Spitzer, VIMOS, VVDS, GAMA, MMT, and OzDES}
-        \item \yichen{Determined and visualized black hole mass - host galaxy mass relation through SED fitting} using \href{https://cigale.lam.fr/}{\texttt{CIGALE}} toolkit
+        \item Updated photometric redshifts of dwarf AGN candidates in the DES C3, X3, and E2 fields to spectroscopic redshifts
+        \item Assembled publicly accessible spectra and displayed observations from Spitzer, VIMOS, VVDS, GAMA, MMT, and OzDES
+        \item Determined and visualized black hole mass - host galaxy mass relation through SED fitting using \href{https://cigale.lam.fr/}{\texttt{CIGALE}} toolkit
     \end{itemize}
-    \item \yichen{\textbf{Project 5: redshift estimation of galaxies using machine learning} (NCSA SPIN internship) \hfill $\rceil$} %2023/10 - Present
+    \item \textbf{Project 5: redshift estimation of distant galaxies with deep learning} (NCSA SPIN internship) \hfill $\rceil$ %2023/10 - Present
     \begin{itemize}[leftmargin=1.5em]
-        \item \yichen{(Will resolve issues in DeepDISC, LINCC fork with Grant; the item over here will reach the end of this line to fill the blank)}
+        \item Cooperated with graduate colleagues from LINCC institutes to incorporate \href{https://github.com/LSSTDESC/RAIL}{\texttt{Rail}} into the framework built upon Project 1
     \end{itemize}
 \end{itemize}
 
@@ -144,7 +132,7 @@
 \begin{itemize}[leftmargin=1.5em]
     \item \textbf{Project: meteor slitless spectrum analysis captured by DSLR camera (leading)} \hfill $\rceil$
     \begin{itemize}[leftmargin=1.5em]
-        \item Analyzed the photos of 2021 Geminid meteor shower captured by commercial camera equipped with diffraction gratings
+        \item Analyzed the photos of 2021 Geminid meteor shower captured by commercial camera equipped with gratings
         \item Dissected the intensities of Sodium and Magnesium lines using Python, adressing sodium variation in Geminid meteoroids
         \item Developed machine learning algorithms for automated detection and photometric assessment of meteor recordings
     \end{itemize}
@@ -175,6 +163,18 @@
 
 \end{section}
 
+\begin{section}{PUBLICATIONS AND ABSTRACTS}
+    
+\begin{enumerate}[leftmargin=1.5em]
+    \item \textbf{Yichen Liu}, Xin Liu, et al., ``Black hole - host galaxy relations of dwarf AGNs in DES supernova field up to $z\sim3.4$'', In prep.
+    \item \textbf{Yichen Liu}, Colin J. Burke, Charlotte A. Ward, Xin Liu, Priya Natarajan, \href{https://submissions.mirasmart.com/AAS243/Itinerary/PresentationDetail.aspx?evdid=500}{``Host galaxy properties of HSC-SSP variable AGNs in the COSMOS field and expectations for Rubin Observatory''}, American Astronomical Society Meeting \#243, id. 3936
+    \item Grant Merz, \textbf{Yichen Liu}, Colin J. Burke, Patrick D. Aleo, Xin Liu, Matias Carrasco Kind, Volodymyr Kindratenko, Yufeng Liu, \href{https://academic.oup.com/mnras/advance-article-abstract/doi/10.1093/mnras/stad2785/7273850?redirectedFrom=fulltext}{``Detection, Instance Segmentation, and Classification for Astronomical Surveys with Deep Learning (DeepDISC): Detectron2 Implementation and Demonstration with Hyper Suprime-Cam Data,"} MNRAS 526, 1122 (2023)
+    \item \textbf{Yichen Liu}, Peixia Zheng, and Hong-Chao Liu, \href{https://opg.optica.org/oe/fulltext.cfm?uri=oe-30-9-14073&id=471300}{``Anti-loss-compression image encryption based on computational ghost imaging using discrete cosine transform and orthogonal patterns,"} Optics Express 30, 14073 (2022)
+    \item Peixia Zheng, \textbf{Yichen Liu}, and Hong-Chao Liu, \href{http://www.irla.cn/cn/article/doi/10.3788/IRLA20211058}{``Single-pixel imaging and metasurface imaging,"} Infrared and Laser Engineering 50, 20211058-1 (2022)
+\end{enumerate}
+
+\end{section}
+
 \begin{section}{SYNERGISTIC ACTIVITIES}
 
 \begin{tabular}{@{}p{0.2\linewidth}@{}p{0.8\linewidth}@{}}
@@ -193,7 +193,7 @@
     
 \begin{itemize}[leftmargin=1.5em]
     \item Cerro Tololo Inter-American Observatory, Blanco 4m / DECam: 3 nights observation \hfill 2023/01 - 2023/04
-    \item Personal Remote Observatory, BKP250 / QHY9sm: astrophotography and photometry \hfill 2019/08 - 2022/08
+    \item Personal Remote Observatory, BKP250 / QHY9sm: \href{https://yliu.fit/astrophotography/}{astrophotography} and photometry \hfill 2019/08 - 2022/08
 \end{itemize}
 
 \end{section}
@@ -207,13 +207,13 @@
         \item Smart Star Sponsorship for studies at University of California, Berkeley \hfill 2022/06
         \item University of Macau Dean's Honour List (2020 and 2022) \hfill 2022/08
         \item Residential College Summer Programme Sponsorship for studies at Shanghai Jiao Tong university \hfill 2021/05
-        % \item Third Prize, China Undergraduate Physics Tournament \hfill 2020/10
+        \item Third Prize, China Undergraduate Physics Tournament \hfill 2020/10
         \item National Team Leader at the 2019 European Union Contest for Young Scientists \hfill 2019/09
         \item University of Macau Full Scholarship (2019-2021) \hfill 2019/08
         \item Bronze Medal, International Olympiad of Astronomy and Astrophysics \hfill 2018/11
         \item First Prize, China Adolescents' Science and Technology Innovation Contest \hfill 2018/08
         % \item Second Prize, Deng Feng National Contest on Science and Innovation \hfill 2018/08
-        % \item Second Prize, China National Astronomy Olympiad \hfill 2018/05
+        \item Second Prize, China National Astronomy Olympiad \hfill 2018/05
     \end{itemize}
         
 \end{section}
@@ -233,10 +233,10 @@
 
 \textbf{Organizer and Lecturer of Seminar of Physics}, \textit{University of Macau (Macau SAR, China)} \hfill \textbf{2022/02 - 2022/05}
 \begin{itemize}[leftmargin=1.5em]
-    \item established and coordinated a comprehensive lecture series at the University of Macau with my peer,\href{http://runawayfancy.me/}{Jiheng Duan}, delivering in-depth explorations of advanced mathematical and physical concepts that went beyond the standard curriculum
+    \item established and coordinated a comprehensive lecture series at the University of Macau with my peer, \href{http://runawayfancy.me/}{Jiheng Duan}, delivering in-depth explorations of advanced mathematical and physical concepts that went beyond the standard curriculum
     \item Bridged the theoretical knowledge gaps crucial for advanced research in physics by covering an array of subjects from classical mechanics to partial differential equations, and essential tools like LaTeX and Git, for the benefit of physics students
     \item Authored a comprehensive guide for freshmen, providing a roadmap for academic development and graduate study preparation
-    \item Developed and delivered \textit{SPUM 102 The tools of physical tools}, a bi-weekly lecture series encompassing topics such as complex variables, gamma functions, integral transforms, delta functions, and Green's functions, with a detailed \href{https://github.com/Chisen-Lupus/Seminar-of-Physics-UM/blob/main/SPUM%20102%20The%20tools%20of%20physical%20tool.pdf}{syllabus} provided
+    \item Developed and delivered \textit{SPUM 102 The tools of physical tools}, a weekly lecture series encompassing topics such as complex variables, gamma functions, integral transforms, delta functions, and Green's functions, with a detailed \href{https://github.com/Chisen-Lupus/Seminar-of-Physics-UM/blob/main/SPUM%20102%20The%20tools%20of%20physical%20tool.pdf}{syllabus} provided
     \item Made lecture recordings accessible to the public on \href{https://www.youtube.com/watch?v=nQkv03r-XeQ&list=PLV9fHDZW7hHWQ9rrAk7c9kdeV-Lqyt7pV&index=10}{Youtube}, extending the reach of these resources beyond the classroom
 \end{itemize}
 
@@ -244,11 +244,11 @@
 
 \begin{section}{EXTRACURRICULAR EXPERIENCES}
     
-\textbf{Astrophotographer}, \textit{Personal 25‑centimeter Remote Observatory (Hebei, China)} \hfill \textbf{2018/01 ‑ 2022/07}
+\textbf{Astrophotographer}, \textit{Personal 10-Inch Remote Observatory (Hebei, China)} \hfill \textbf{2019/08 - 2022/08}
 \begin{itemize}[leftmargin=1.5em]
     \item Sourced and developed a 2$\times$2‑meter unattended observatory with full internet connectivity and a retractable roof
     \item Curated and calibrated a suite of astronomical equipment and 3D‑printed accessories, which can be fully controlled remotely
-    \item Conducted regular astrophotography sessions, capturing images of emission nebulae, with a selection showcased on \href{https://yliu.fit/astrophotography/}{my webpage}.
+    % \item Conducted regular astrophotography sessions, capturing images of emission nebulae, with a selection showcased on \href{https://yliu.fit/astrophotography/}{my webpage}.
 \end{itemize}
 
 \textbf{Director}, \textit{Physics Society, University of Macau (Macau SAR, China)} \hfill \textbf{2020/08 - 2021/02} 
@@ -264,7 +264,7 @@
 
 \textbf{President}, \textit{Beijing Youth Astronomy Union (Beijing, China)} \hfill \textbf{2017/08 - 2018/08} 
 \begin{itemize}[leftmargin=1.5em]
-    \item Conducted educational series on astrophysics, providing Olympiad candidates with additional training resources
+    % \item Conducted educational series on astrophysics, providing Olympiad candidates with additional training resources
     \item Organized public stargazing events adjacent to Beijing’s Olympic Park to foster community engagement in astronomy
     \item Managed the WeChat account ``北京市中学生天文联盟'', achieving widespread readership with posts exceeding 100,000 views
 \end{itemize}
