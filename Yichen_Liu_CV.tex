@@ -110,7 +110,7 @@
 \end{itemize}
 \textbf{University of Illinois at Urbana-Champaign} | College of Liberal Arts \& Sciences \hfill \textbf{2022/08 - 2024/05}
 \begin{itemize}[leftmargin=1.5em]
-    \item Bachelor of Science in \textbf{Astrophysics} (Highst Distinction) and \textbf{Mathematics} (High Distinction), \textbf{3.95/4.00}
+    \item Bachelor of Science in \textbf{Astrophysics} (Highst Distinction) and \textbf{Mathematics} (Highest Distinction), \textbf{3.95/4.00}
     \item Minors in \textbf{Physics}, \textbf{Computer Science}, and \textbf{Chemistry}
     \item Graduated with \textbf{James Scholar Honor} and \textbf{Cum Laude}
 \end{itemize}
@@ -141,46 +141,44 @@
 \begin{itemize}[leftmargin=1.5em]
     \item \textbf{Meteor slitless spectrum analysis captured by DSLR camera (leading)} 
     \hfill {\footnotesize \href{https://github.com/Chisen-Lupus/metspec}{\texttt{Metspec}}}| % $\rceil$
-    \begin{itemize}[leftmargin=1.5em]
-        % \item Analyzed the photos of 2021 Geminid meteor shower captured by commercial camera equipped with gratings
-        \item Dissected the intensities of Sodium and Magnesium lines using Python, analyzing sodium variation in Geminid meteoroids
-        \item Developed machine learning algorithms for automated detection and photometric assessment of meteor recordings
-    \end{itemize}
 \end{itemize}
 
 \textbf{Research Assistant} (advisor: \href{mailto:hcliu@um.edu.mo}{Professor Hongchao Liu}), \textit{Institute of Applied Physics\& Materials Engineering} \hfill \textbf{2019/09 - 2022/05} 
 \begin{itemize}[leftmargin=1.5em]
     \item \textbf{Stability of ghost imaging in varied environment conditions} 
     \hfill {\footnotesize Publication \ref{irla}}| % $\rceil$ %Aug 2019 - Aug 2021
-    \begin{itemize}[leftmargin=1.5em]
-        % \item Conducted a comprehensive review of current studies in ghost imaging to understand the state-of-the-art in this field
-        \item Assessed the quality of ghost imaging across various setups using MATLAB, producing reports and comparative analyses
-        \item Compared the reflection patterns between distorting and standard mirrors to inform imaging technique improvements
-    \end{itemize}
     \item \textbf{Image encryption based on computational ghost imaging (leading)} 
     \hfill {\footnotesize \href{https://github.com/Chisen-Lupus/gradient-orthogonalization}{\texttt{gradient-orthogonalization}} \& Publication \ref{oe}}| % $\rceil$ %Sep 2021 - Feb 2022
-    \begin{itemize}[leftmargin=1.5em]
-        % \item Conducted experimental research on ghost imaging, exploring the capabilities for metamaterials and metasurfaces
-        \item Developed Python algorithms employing compressive sensing and gradient descent to optimize encryption efficiency
-        \item Optimized simulations utilizing high-performance GPUs on \href{https://pytorch.org/}{\texttt{PyTorch}} to find an optimized pattern for image transform
-        \item \href{https://www.tdm.com.mo/en/news-detail/683438?isvideo=false&lang=en&category=all}{Gained local media recognition} as the first student in the department to publish first-authored research paper
-    \end{itemize}
     \item \textbf{Advancement in ghost imaging through neural network (leading)} 
     \hfill {\footnotesize \href{https://github.com/Chisen-Lupus/CNN_SEGI}{\texttt{CNN\_SEGI}}}| % $\rceil$ %Mar 2022 - May 2022
-    \begin{itemize}[leftmargin=1.5em]
-        \item Collaborated with graduate students in managing digital micromirror device and laser equipment for experimental setups
-        % \item Assessed existing ghost imaging pipelines, integrating diverse neural network models to improve the technique
-        \item Developed Python pipelines integrating recurrent and convolutional neural network architectures for ghost imaging
-    \end{itemize}
 \end{itemize}
 
 \end{section}
 
-\begin{section}{PUBLICATIONS AND ABSTRACTS}
-
-% get reference list from python
+% This sections uses Python code to get real-time information from ADS
 % --shell-escape is needed when compiling
-\input{ |python get_publist.py}
+% `requests` and `urllib` needed in the code
+
+
+\newcommand{\someSpecialText}{}
+
+\begin{section}{PUBLICATIONS}
+
+(\input{ |python get_pubstat.py --ads_token Gh2X1K7QxOgpUq0kU3eG3QWNuer5wV6CaIjgkGdp --library_id lSSV4SVjSrmt-qgqILgTcA --name Yichen})
+
+    
+\textbf{First-Author Publications}
+\begin{enumerate}[leftmargin=1.5em]
+    \input{ |python get_publist.py --ads_token Gh2X1K7QxOgpUq0kU3eG3QWNuer5wV6CaIjgkGdp --library_id lSSV4SVjSrmt-qgqILgTcA --name Yichen --first_author True} 
+\end{enumerate}
+
+\textbf{Co-Author Publications}
+
+\begin{enumerate}[leftmargin=1.5em]
+    \input{ |python get_publist.py --ads_token Gh2X1K7QxOgpUq0kU3eG3QWNuer5wV6CaIjgkGdp --library_id lSSV4SVjSrmt-qgqILgTcA --name Yichen --first_author False} 
+\end{enumerate}
+
+old versions
 
 \begin{enumerate}[leftmargin=1.5em]
     \item \label{inprep}\textbf{Yichen Liu}, Xin Liu, et al., ``Black hole - host galaxy relations of dwarf AGNs in DES supernova field up to $z\sim3.4$'', In prep.
