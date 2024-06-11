@@ -43,10 +43,10 @@ try:
         doi_link = f'''https://doi.org/{pub['doi'][0]}'''
         formatted_title = f'''\\href{{{doi_link}}}{{``{title},''}}'''
         pubname = pub['pub']
-        volume = pub['volume'] if 'volume' in pub else ''
-        page = pub['page'][0] if 'page' in pub else ''
+        volume = ' ' + pub['volume'] if 'volume' in pub else ''
+        page = ', ' + pub['page'][0] if 'page' in pub else ''
         year = pub['year']
-        return f'\\item {authors}, {formatted_title} {pubname} {volume}, {page} ({year})'
+        return f'\\item {authors}, {formatted_title} \\textit{{{pubname}{volume}}}{page} ({year})'
 
     def get_publications(ads_token, library_id, name=None, first_author=None):
         '''

@@ -2,6 +2,19 @@ try:
     import requests
     import argparse
     from urllib.parse import urlencode
+
+    def calculate_h_index(citations):
+        '''
+        calculate the h-index based on the citation list
+        '''
+        citations.sort(reverse=True)
+        h_index = 0
+        for i, citation in enumerate(citations):
+            if citation >= i + 1:
+                h_index = i + 1
+            else:
+                break
+        return h_index
     
     def get_pubstat(ads_token, library_id, name):
         '''
@@ -18,8 +31,9 @@ try:
         paper_count = len(publist)
         citation_count_first = sum([pub['citation_count'] for pub in publist if name in pub['first_author']])
         citation_count = sum([pub['citation_count'] for pub in publist])
+        h_index = calculate_h_index([pub['citation_count'] for pub in publist])
         # prepare output
-        out = f'{paper_count} in Total, Total Citation: {citation_count}, First-Author Citation: {citation_count_first}'
+        out = f'{paper_count} papers; total citation: {citation_count}; first-author citation: {citation_count_first}; h-index: {h_index} (based on ADS)'
         print(out)
 
     def main():
