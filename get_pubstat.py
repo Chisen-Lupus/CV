@@ -33,7 +33,7 @@ try:
         citation_count = sum([pub['citation_count'] for pub in publist])
         h_index = calculate_h_index([pub['citation_count'] for pub in publist])
         # prepare output
-        out = f'{paper_count} papers; total citation: {citation_count}; first-author citation: {citation_count_first}; h-index: {h_index} (based on ADS)'
+        out = f'total count = {paper_count}, total citation = {citation_count}, first-author citation = {citation_count_first}, h-index = {h_index} (based on ADS)'
         print(out)
 
     def main():

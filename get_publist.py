@@ -40,8 +40,11 @@ try:
         '''
         authors = format_authors(pub['author'], name)
         title = utf8tolatex(pub['title'][0])
-        doi_link = f'''https://doi.org/{pub['doi'][0]}'''
-        formatted_title = f'''\\href{{{doi_link}}}{{``{title},''}}'''
+        if 'doi' in pub.keys(): 
+            doi_link = f"https://doi.org/{pub['doi'][0]}"
+            formatted_title = f"\\href{{{doi_link}}}{{``{title},''}}"
+        else: 
+            formatted_title = f"``{title},''"
         pubname = pub['pub']
         volume = ' ' + pub['volume'] if 'volume' in pub else ''
         page = ', ' + pub['page'][0] if 'page' in pub else ''
