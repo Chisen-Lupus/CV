@@ -9,7 +9,10 @@ try:
         Reformat names from 'Last, First' to 'First Last', translating its character to \LaTeX format
         '''
         parts = name.split(',')
-        formatted_name = f'{parts[1].strip()} {parts[0].strip()}'
+        if len(parts)==1:
+            formatted_name = f'{parts[0].strip()}'
+        else:
+            formatted_name = f'{parts[1].strip()} {parts[0].strip()}'
         if name_of_interest in name:
             return f'\\textbf{{{utf8tolatex(formatted_name)}}}'
         else: 
@@ -65,6 +68,7 @@ try:
         results = requests.get(f'https://api.adsabs.harvard.edu/v1/search/query?{encoded_query}', headers={'Authorization': 'Bearer ' + ads_token})
         publist = results.json()['response']['docs']
         # prepare output
+        publist = sorted(publist, key=lambda x: x['pubdate'], reverse=True)
         out = ''
         if first_author is True: 
             for pub in publist: 
