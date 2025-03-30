@@ -101,4 +101,4 @@ try:
         main()
 
 except Exception as e: 
-    print(repr(e))
+    print('\item '+repr(e))
